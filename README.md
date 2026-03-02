@@ -7,8 +7,8 @@ Significado:  Trojan Backdoor é um tipo de malware que se disfarça de software
 
 !!!!!!!!!!!!!!!!!!
 
-Diferentemente de um SO como Unix/POSIX, que são sistemas fáceis de criar payloads ou shells devido a facilidade de criar sockets, processos, threads etc..
-No windows a coisa é mais embaixo, o erro comum para quem cria no Unix é que não se pode usar diretamente um SOCKET como HANDLE no Windows. São tipos diferentes e o CreateProcess não aceita sockets diretamente para redirecionamento. O Windows requer pipes nomeados ou anônimos para redirecionar I/O entre processos.
+Diferentemente de um SO como Unix/POSIX, que são sistemas fáceis de criar payloads ou shells devido a facilidade de criar sockets, processos, threads entre outros,
+no windows o assunto é amplamente mais distinto, o erro comum para quem cria no Unix é que não se pode usar diretamente um SOCKET como HANDLE no Windows. São tipos diferentes e o CreateProcess não aceita sockets diretamente para redirecionamento. O Windows requer pipes nomeados ou anônimos para redirecionar I/O entre processos.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 O incrivel do Unix/Posix em simplesmente usar funções como o dup2() como tudo é file descriptor(Socket, arquivo, pipe, terminal - todos usam a mesma interface).
